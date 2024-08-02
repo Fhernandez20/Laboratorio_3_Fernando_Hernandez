@@ -100,34 +100,23 @@ public class Hernandez_Fernando_lab3 {
             }
 
             if (opcion == 3) {
-                int fila;
-                int contador = 0;
-                int contadorEspacio = 0;
-                String espacio = "";
-
-                System.out.println("ingrese el numero de filas deseado");
-                fila = lea.nextInt();
-
-                int filalimite = fila;
-
-                while (contador < filalimite) {
-
-                    while (contadorEspacio < contador) {
-                        espacio = espacio + filalimite;
-
-                        contadorEspacio++;
-                    }
-                    System.out.println(fila);
-                    contador++;
-
-                }
-
+                System.out.println("Que numero de filas desea en la piramide");
+                int fila = lea.nextInt();
+                for (int i = 1; i <= fila; i++) {
+                for (int o = 1; o < i; o++) {
+                System.out.print("  ");
             }
+                for (int n = fila; n >= i; n--) {
+                    System.out.print(n + " ");
+            }
+            System.out.println();
+                }
+            }
+    
+  
             if (opcion==4){
                 System.out.println("Saliendo");
                 System.exit(0);
             }
-        }
-        // TODO code application logic here
-    }
+        }  }
 
